@@ -1,5 +1,8 @@
 h1 {
     text-align: center;
+    margin: auto;
+    padding-top: 125px;
+    padding-bottom: 125px;
 }
 h2 {
     text-align: center;
@@ -76,7 +79,7 @@ overflow: hidden;
     }
   }
   /*Shrinking for mobile*/
-  @media (max-width: 768px) {
+  @media (max-width: 368px) {
     .waves {
       height:40px;
       min-height:40px;
