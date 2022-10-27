@@ -1,14 +1,18 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
 h1 {
     text-align: center;
     margin: 0;
     padding-top: 280px;
-    padding-bottom: 480px;
+    padding-bottom: 475px;
 }
 h2 {
     text-align: center;
 }
 body {
-    background-color: rgb(255, 248, 220);
+    background-color: rgb(223, 242, 216);
     text-align: center;
 }
 p {
@@ -91,3 +95,31 @@ overflow: hidden;
       font-size:24px;
     }
   }
+#slide {
+  position: absolute;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes slide {
+    0%   {margin: 0px 0px 0px 0px}
+    100% {margin: 25px 25px 25px 25px }
+}
+
+.greeting {
+  animation: slide 5s;
+}
+
+.header {
+  color: rgb(122, 98, 99); 
+  font-size: 71px; 
+  font-family: Brush MT; 
+  font-weight: bold;
+  background-color: rgb(126, 189, 195);
+}

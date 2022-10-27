@@ -1,5 +1,5 @@
-let theList = ["Hello", "Hola", "Bonjour", "Guten Tag", "Salve", "Zdravstvuyte", "你好", "こんにちは", "Olá", "안녕하세요", "Asalaam alaikum", "Goddag", "Shikamoo", "Goedendag", "Yassas", "Dzień dobry"
-, "Selamat siang", "Namaste", "Namaskar", "Merhaba", "Shalom", "God dag", "Hej"]
+let theList = ["Hello", "Hola", "Bonjour", "Guten Tag", "Salve", "Zdravstvuyte", "你好", "こんにちは", "Olá", "안녕하세요", "Asalaam alaikum", "Goddag", "Shikamoo", 
+"Goedendag", "Yassas", "Dzień dobry", "Selamat siang", "Namaste", "Namaskar", "Merhaba", "Shalom", "God dag", "Hej"]
 
 
 function randomWordPicker(aList){
