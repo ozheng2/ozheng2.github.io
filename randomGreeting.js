@@ -5,7 +5,7 @@ let theList = ["Hello", "Hola", "Bonjour", "Guten Tag", "Salve", "Zdravstvuyte",
 function randomWordPicker(aList){
     let theListLength = theList.length / 10
     let theAnswer = Math.floor( ( Math.random( ) * 10 ) * theListLength  ) 
-    return aList[theAnswer] + ", I'm Oscar"
+    return aList[theAnswer]
 }
 
 let result = randomWordPicker(theList)
