@@ -96,21 +96,21 @@ overflow: hidden;
     }
   }
 
-@keyframes slide{
-  0% {margin: 0px 0px 0px 0px;}
-  100% {margin: 25px 25px 25px 25px;}
-}
 
 #greeting {
-  animation: greeting 5s;
+  animation: greeting 2s;
 }
 
 @keyframes greeting {
-  from {
-    transform: translateX(0px);
+  0% {
+    opacity: 0;
+    overflow: hidden;
+    margin-right: 100%
   }
-  to {
-    transform: translateX(100px);
+  100% {
+    opacity: 1.0;
+    margin-left: 0%
+    overflow: hidden;
   }
 }
 
