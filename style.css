@@ -113,21 +113,15 @@ overflow: hidden;
   }
 }
 
-.name{
-  transition-delay: 5s;
+#name1 {
+  animation: name1 2s;
+  animation-delay: 4s;
 }
 
-#name {
-  animation: name 2s;
-}
-
-@keyframes name {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+@keyframes name1 {
+  0% { opacity:0; }
+  100% { opacity:1; }
+  
 }
 
 .header {
