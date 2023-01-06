@@ -220,6 +220,7 @@ a {
 .AboutMe {
   color: white;
   clear: left;
+  box-sizing: border-box;
 }
 #AboutMeHead {
   font-size: 64px;
@@ -234,13 +235,14 @@ a {
   margin-left: 50px;
   clear: left;
 }
-  AboutMeInfo.section, aside {
+  #AboutMeInfo section, aside {
     float: left;
     width: 44%;
     padding: 1%;
     margin: 1%;
+    margin-bottom: 200px; 
   }
-  section {
+  #AboutMeInfo section {
     background: #061826;
   }
 #Image{
@@ -248,3 +250,21 @@ a {
   margin-right: 20px;
   
 }
+.achievement{
+  background-color: blue;
+  height: 500px;
+  box-sizing: border-box;
+}
+  .achievement section {
+    text-align: center;
+  }
+.t{
+  background-color: red;
+  height: 500px;
+  box-sizing: border-box;
+}
+  .t p{
+    margin:0;
+  }
+/*id - # 
+  class - .*/
