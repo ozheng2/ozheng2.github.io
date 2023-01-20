@@ -217,6 +217,9 @@ a {
 }
 
 /* About Me */
+.ABME{
+  height: 800px;
+}
 .AboutMe {
   color: white;
   clear: left;
@@ -250,17 +253,67 @@ a {
   margin-right: 20px;
   
 }
-.achievement{
-  background-color: blue;
-  height: 500px;
-  box-sizing: border-box;
+/*Achievement*/
+.achievement-section{
+  background-color: white;
 }
   .achievement section {
     text-align: center;
   }
+/* #achievement-title {
+  font-size: 64px;
+  text-align: center;
+  margin-left: 100px;
+  color: #66fcf1; 
+  margin-top: 100px;
+} */
+.achievements-container {
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 64px 120px 120px;
+  gap: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+.achievements-container div {
+  padding: 10px;
+  border: 1px solid #000000;
+}
+.achievement-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 100px;
+  font-size: 64px;
+  color: black;
+  /* color: #66fcf1; */
+}
+div.achievement-gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.achievement-gallery:hover {
+  border: 1px solid #777;
+}
+
+div.achievement-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.achievement-desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
 .t{
   background-color: red;
-  height: 500px;
+  height: 800px;
   box-sizing: border-box;
 }
   .t p{
