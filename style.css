@@ -257,77 +257,68 @@ a {
 /*Achievement*/
 .achievement-section{
   background-color: white;
+  height: 1000px;
 }
   .achievement section {
     text-align: center;
   }
-/* #achievement-title {
-  font-size: 64px;
-  text-align: center;
-  margin-left: 100px;
-  color: #66fcf1; 
-  margin-top: 100px;
-} */
-.achievements-container {
-  height: 800px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 64px 120px 120px;
-  gap: 100px;
-  padding-left: 60px;
-  padding-right: 60px;
-  box-sizing: border-box;
-}
-.achievements-container div {
-  padding: 10px;
-  border: 1px solid #000000;
-}
-.achievement-header {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  margin: 100px;
-  font-size: 64px;
-  color: black;
-  /* color: #66fcf1; */
-}
-div.achievement-gallery {
-  border: 1px solid #ccc;
-}
-div.achievement-gallery:hover {
-  border: 1px solid #777;
-}
-div.achievement-gallery img {
-  width: 100%;
-  height: auto;
-}
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-* {
-  box-sizing: border-box;
-}
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
+  #achievement-title {
+    font-size: 64px;
+    text-align: center;
+    margin-left: 100px;
+    color: black;
+    /* color: #66fcf1;  */
+    margin-top: 100px;
   }
-}
-@media only screen and (max-width: 500px) {
-  .responsive {
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
     width: 100%;
+    height: auto;
   }
-}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
 
 
 .t{
