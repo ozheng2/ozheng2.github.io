@@ -1,8 +1,8 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  scroll-behavior: smooth;
 }
+
 h1 {
   text-align: center;
   margin: 0;
@@ -230,7 +230,7 @@ a {
   text-align: left;
   margin-left: 100px;
   color: #66fcf1; 
-  margin-top: 100px;
+  margin-top: 120px;
 }
 #AboutMeInfo {
   font-size: 25px;
@@ -242,8 +242,7 @@ a {
     float: left;
     width: 44%;
     padding: 1%;
-    margin: 1%;
-    margin-bottom: 200px; 
+    margin: 1%; 
   }
   #AboutMeInfo section {
     background: #061826;
@@ -251,13 +250,13 @@ a {
 #Image{
   float: right;
   margin-right: 20px;
-  
 }
 
 /*Achievement*/
 .achievement-section{
-  background-color: white;
-  height: 1000px;
+  background-color: #1f2833;
+  height: 800px;
+  align-items: center;
 }
   .achievement section {
     text-align: center;
@@ -265,13 +264,14 @@ a {
   #achievement-title {
     font-size: 64px;
     text-align: center;
-    margin-left: 100px;
-    color: black;
-    /* color: #66fcf1;  */
-    margin-top: 100px;
+    color: #66fcf1; 
+    padding-top: 65px;
   }
   div.gallery {
     border: 1px solid #ccc;
+    display: block;
+    margin-left: auto;
+
   }
   
   div.gallery:hover {
@@ -279,8 +279,8 @@ a {
   }
   
   div.gallery img {
-    width: 100%;
-    height: auto;
+    width:  100%;
+    height: 337.5px;
   }
   
   div.desc {
@@ -293,19 +293,20 @@ a {
   }
   
   .responsive {
-    padding: 0 6px;
-    float: left;
+    margin-top: 2%;
+    padding: 0 50px;
+    float:left;
     width: 24.99999%;
   }
   
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 1080px) {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
     }
   }
   
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 800px) {
     .responsive {
       width: 100%;
     }
@@ -316,7 +317,7 @@ a {
     clear: both;
   }
 
-
+/* 
 
 
 
@@ -328,6 +329,6 @@ a {
 }
   .t p{
     margin:0;
-  }
+  } */
 /*id - # 
   class - .*/
