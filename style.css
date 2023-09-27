@@ -218,7 +218,7 @@ a {
 
 /* About Me */
 .ABME{
-  height: 800px;
+  height: 700px;
 }
 .AboutMe {
   color: white;
@@ -229,8 +229,8 @@ a {
   font-size: 64px;
   text-align: left;
   margin-left: 100px;
-  color: #66fcf1; 
   margin-top: 120px;
+  color: #66fcf1; 
 }
 #AboutMeInfo {
   font-size: 25px;
@@ -246,6 +246,7 @@ a {
   }
   #AboutMeInfo section {
     background: #061826;
+    margin-top: 35px;
   }
 #Image{
   float: right;
