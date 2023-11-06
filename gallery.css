@@ -1,0 +1,148 @@
+/*Gallery Images ROWS OF 4*/
+div.gallery {
+    border: 1px solid #ccc;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+div.gallery:hover {
+    border: 1px solid #66fcf1;
+}
+
+div.gallery img {
+    width:  100%;
+    height: 337.5px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    margin-top: 2%;
+    padding: 0 50px;
+    float: left;
+    width: 24.999999999999999%;                          /*changes the grid layout*/
+}
+
+.responsive3 {
+    margin-top: 2%;
+    padding: 0 50px;
+    float: left;
+    width: 33.33333333333333333%;                          /*changes the grid layout*/
+}
+
+.responsive4 {
+    margin-top: 2%;
+    margin-bottom: 15px;
+    padding: 0 50px;
+    float: left;
+    width: 24.999999999999999%;                          /*changes the grid layout*/
+}
+
+
+div.gallery button {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+  }
+  
+  div.gallery button:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    /* box-shadow: 0 0 35px var(--clr); */
+    animation: box 3s infinite;
+  }
+  
+  div.gallery button::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #272822;
+  }
+  
+  div.gallery button span {
+    position: relative;
+    z-index: 1;
+  }
+  div.gallery button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  div.gallery button i::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+  }
+  
+  div.gallery button:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+  }
+  
+  div.gallery button i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+  }
+  
+  div.gallery button:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes box {
+    0% {
+      box-shadow: #27272c;
+    }
+    50% {
+      box-shadow: 0 0 25px var(--clr);
+    }
+    100% {
+      box-shadow: #27272c;
+    }
+  }
+  

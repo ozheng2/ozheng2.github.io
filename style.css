@@ -304,37 +304,28 @@ a {
       color: white;
       padding-bottom: 30px;
     }
-/*Gallery Images*/
-  div.gallery {
-    border: 1px solid #ccc;
-    display: block;
-    margin-left: auto;
-    margin-bottom: 25px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #66fcf1;
-  }
-  
-  div.gallery img {
-    width:  100%;
-    height: 337.5px;
-  }
-  
-  div.desc {
-    padding: 15px;
+
+/*Awards*/
+.award-section{
+  background-color: #1f2833;
+  height: 800px;
+  align-items: center;
+  margin-top: 500px;
+}
+  .award section {
     text-align: center;
   }
-  
-  * {
-    box-sizing: border-box;
+  #award-title {
+    font-size: 64px;
+    text-align: center;
+    color: #66fcf1; 
+    padding-top: 65px;
   }
-  
-  .responsive {
-    margin-top: 2%;
-    padding: 0 50px;
-    float: left;
-    width: 33.333333%;                          /*changes the grid layout*/
+  #award-subtitle {
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
   }
   
   @media only screen and (max-width: 1080px) {
