@@ -261,9 +261,14 @@ a {
 }
 
 /*Achievement*/
-.achievement-section{
+.achievement-section{               /*Row 1*/
   background-color: #1f2833;
-  height: 840px;
+  height: 1000px;
+  align-items: center;
+}
+.achievement-section2{              /*Row 2*/
+  background-color: #1f2833;
+  height: 500px;
   align-items: center;
 }
   .achievement section {
@@ -276,75 +281,75 @@ a {
     padding-top: 65px;
   }
   #achievement-subtitle {
-    font-size: 32px;
+    font-size: 35px;
     text-align: center;
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
-/*Leadership*/
-.leadership-section{
+  /*Leadership*/
+  .leadership-section{
+      background-color: #1f2833;
+      height: 1000px;
+      align-items: center;
+      margin-top: 500px;
+    }
+      .leadership section {
+        text-align: center;
+      }
+      #leadership-title {
+        font-size: 64px;
+        text-align: center;
+        color: #66fcf1; 
+        padding-top: 65px;
+      }
+      #leadership-subtitle {
+        font-size: 32px;
+        text-align: center;
+        color: white;
+        padding-bottom: 30px;
+      }
+
+  /*Awards*/
+  .award-section{
     background-color: #1f2833;
     height: 800px;
     align-items: center;
     margin-top: 500px;
   }
-    .leadership section {
+    .award section {
       text-align: center;
     }
-    #leadership-title {
+    #award-title {
       font-size: 64px;
       text-align: center;
       color: #66fcf1; 
       padding-top: 65px;
     }
-    #leadership-subtitle {
+    #award-subtitle {
       font-size: 32px;
       text-align: center;
       color: white;
       padding-bottom: 30px;
     }
-
-/*Awards*/
-.award-section{
-  background-color: #1f2833;
-  height: 800px;
-  align-items: center;
-  margin-top: 500px;
-}
-  .award section {
-    text-align: center;
-  }
-  #award-title {
-    font-size: 64px;
-    text-align: center;
-    color: #66fcf1; 
-    padding-top: 65px;
-  }
-  #award-subtitle {
-    font-size: 32px;
-    text-align: center;
-    color: white;
-    padding-bottom: 30px;
-  }
-  
-  @media only screen and (max-width: 1080px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
+    
+    @media only screen and (max-width: 1080px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
     }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .responsive {
-      width: 100%;
+    
+    @media only screen and (max-width: 800px) {
+      .responsive {
+        width: 100%;
+      }
     }
-  }
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
 /*  */
 
@@ -363,3 +368,9 @@ a {
   } */
 /*id - # 
   class - .*/
+
+
+/*  Colors:
+Background: #061826;
+Blue: #66fcf1; 
+*/

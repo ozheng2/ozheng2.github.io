@@ -4,6 +4,7 @@ div.gallery {
     display: block;
     margin-left: auto;
     margin-bottom: 25px;
+    background-color: #061826;
 }
 
 div.gallery:hover {
@@ -18,6 +19,7 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+    font-size: 18px;
 }
 
 * {
@@ -58,6 +60,7 @@ div.gallery button {
     font-size: 1rem;
     padding: 1rem 3rem;
     transition: 0.2s;
+    margin: 0px 3px 10px;
   }
   
   div.gallery button:hover {
