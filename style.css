@@ -314,7 +314,7 @@ a {
   /*Awards*/
   .award-section{
     background-color: #1f2833;
-    height: 800px;
+    height: 1000px;
     align-items: center;
     margin-top: 500px;
   }
@@ -328,10 +328,11 @@ a {
       padding-top: 65px;
     }
     #award-subtitle {
-      font-size: 32px;
+      font-size: 35px;
       text-align: center;
       color: white;
-      padding-bottom: 30px;
+      padding: 15px;
+      padding-bottom: 25px;
     }
     
     @media only screen and (max-width: 1080px) {
