@@ -30,22 +30,21 @@ div.desc {
     margin-top: 2%;
     padding: 0 50px;
     float: left;
-    width: 24.999999999999999%;                          /*changes the grid layout*/
+    width: 24.99%;                          /*changes the grid layout*/
 }
 
 .responsive3 {
     margin-top: 2%;
     padding: 0 50px;
     float: left;
-    width: 33.33333333333333333%;                          /*changes the grid layout*/
+    width: 33.33%;                          /*changes the grid layout*/
 }
 
 .responsive4 {
     margin-top: 2%;
-    margin-bottom: 15px;
     padding: 0 50px;
     float: left;
-    width: 24.999999999999999%;                          /*changes the grid layout*/
+    width: 24.99%;                          /*changes the grid layout*/
 }
 
 
