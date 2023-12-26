@@ -1,14 +1,14 @@
-window.onscroll = function() {myFunction()};
+var prevScrollpos = window.scrollY;
 
-const navbar = document.getElementById("topnav");
-const abme = document.getElementById("AboutMeHead");
-const sticky = abme.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+  console.log(window.scrollY);
+  if(1030 > currentScrollPos) {                                      // if (865 > currentScrollPos) {  865 = where the header and about me sections meet/background changes color
+    document.getElementById("nav").style.top = "15px";
+    document.getElementById("back-to-top").style.right = "-15rem";
   } else {
-    navbar.classList.remove("sticky");
+    document.getElementById("nav").style.top = "-50px";
+    document.getElementById("back-to-top").style.right = "1.5rem";
   }
-  //position of the welcome button when pressed: 866
+  prevScrollpos = currentScrollPos;
 }

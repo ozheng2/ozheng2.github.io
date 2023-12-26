@@ -35,7 +35,7 @@ div.desc {
 
 .responsive3 {
     margin-top: 2%;
-    padding: 0 50px;
+    padding: 0 3rem;
     float: left;
     width: 33.33%;                          /*changes the grid layout*/
 }

@@ -11,7 +11,7 @@ h1 {
 h2 {
   text-align: center;
   margin: 0;
-  padding-bottom: 145px;
+  padding-bottom: 0.75vh;
   overflow: hidden;
 }
 
@@ -21,6 +21,7 @@ body {
   text-align: center;
   color: #c5c6c7; 
   scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }
 
 ol {
@@ -35,37 +36,90 @@ ul {
 a {
   color: white;
 }
-#topnav {
-/* background-color: #333; */
-  overflow: hidden;
+
+#nav {
+  background-color: #061826;
+  position: fixed;
+  text-align: center;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border: 2px solid #EBECF1;
+  border-radius: 30px;
   opacity: 0;
   animation: topAni 1s ease 2.75s forwards;
-  position: fixed;
+  transition: top 0.3s;
+  z-index: 9999;
 }
-/* Style the links inside the navigation bar */
-#topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 17px;
+
+ul {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0 30px;
+  list-style-type: none;
+  li:not(:last-child) {
+    margin-right: 1vw;
   }
-    /* Change the color of links on hover */
-    #topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.2s;
+    a {
+      color:white;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
     }
-    /* Add a color to the active/current link */
-    #topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      display: block;
+      margin: 12px -12px;
+      padding: 0;
+      background: #061826;
+      border: 2px solid #061826;
+      border-right: 2px solid #061826;
+      border-bottom: 2px solid #061826;
+      border-radius: 5px;
+      transition: opacity 0.2s, visibility 0.2s;
+      li {
+        margin: -2px 0 0 -2px;
+        width: calc(100% - 20px);
+        line-height: 1.7;
+        a {
+          color: #2375D8;
+        }
+      }
     }
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
+    &:hover {
+      background: #1f2833;
+      border: 2px solid #1f2833;
+      border-right: 2px solid #1f2833;
+      border-bottom: 2px solid #1f2833;
+      a {
+        color: #66fcf1;
+      }
+      ul {
+        visibility: visible;
+        opacity: 1;
+        box-shadow: 0px 3px 5px 2px #EBECF1;
+        li {
+          a {
+            color: white;
+          }
+          a:hover {
+            color: #66fcf1;
+          }
+        }
+      }
     }
+  }
+}
 
 @keyframes topAni {
   0% {opacity: 0;}
@@ -76,8 +130,8 @@ a {
   /* color: rgb(122, 98, 99);  */
   color: #66fcf1;
   font-size: 75px; 
-  font-family: Brush MT; 
-  font-weight: bold;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
   /* background-color: rgb(126, 189, 195); */
   background-color: #061826;
   background-repeat: no-repeat;
@@ -105,6 +159,14 @@ a {
   animation: name1 1s ease 1.25s forwards;
   opacity: 0;
 }
+#word-3 {
+  font-size: 2.5vw;
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+  color: white;
+  animation: welcomefade 1s ease 2.75s forwards;
+  opacity: 0;
+}
 
 @keyframes name1 {
   0% { opacity:0; }
@@ -118,6 +180,8 @@ a {
   padding: 0px 0px;
   margin-bottom: 225px;
   font-size: 20px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
   cursor: pointer;
   border-color: White;
   color: White;
@@ -225,7 +289,8 @@ a {
 
 /* About Me */
 .ABME{
-  height: 700px;
+  height: 82vh;
+  margin-top: 12vh;
 }
 .AboutMe {
   color: white;
@@ -234,10 +299,13 @@ a {
 }
 #AboutMeHead {
   font-size: 64px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
   text-align: left;
-  margin-left: 100px;
-  margin-top: 120px;
+  margin-left: 100px; 
+  margin-bottom: 5vh;
   color: #66fcf1; 
+  background-color: #1f2833;
 }
 #AboutMeInfo {
   font-size: 25px;
@@ -249,16 +317,42 @@ a {
     float: left;
     width: 44%;
     padding: 1%;
-    margin: 1%; 
+    margin: 1%;
   }
-  #AboutMeInfo section {
-    background: #061826;
+  #AboutMeInfo section  {
     margin-top: 35px;
+  }
+  #text-box {
+    background-color: #061826;
+    padding: 1vw 1.5vw;
   }
 #Image{
   float: right;
   margin-right: 20px;
+  border: 0.05vw solid #66fcf1;
 }
+
+/* .wrapper2 {
+  margin: 150px auto;
+  width: 70%;
+}
+#Image {
+  max-width: 302px;
+  float: right;
+  border: 3px solid #66fcf1;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.text-box {
+  color: white;
+}
+.text-box h2{
+  font-size: 42px;
+}
+.text-box p {
+  font-size: 16px;
+} */
 
 /*Achievement*/
 .achievement-section{               /*Row 1*/
@@ -276,12 +370,16 @@ a {
   }
   #achievement-title {
     font-size: 64px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
     text-align: center;
     color: #66fcf1; 
     padding-top: 65px;
   }
   #achievement-subtitle {
     font-size: 35px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
     text-align: center;
     color: white;
     padding-bottom: 25px;
@@ -290,21 +388,31 @@ a {
   /*Leadership*/
   .leadership-section{
       background-color: #1f2833;
-      height: 1000px;
+      height: 20rem;
       align-items: center;
       margin-top: 500px;
     }
+  .leadership-section2{
+      background-color: #1f2833;
+      height: 32vh;
+      align-items: center;
+      margin-top: 500px;
+    }  
       .leadership section {
         text-align: center;
       }
       #leadership-title {
         font-size: 64px;
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
         text-align: center;
         color: #66fcf1; 
         padding-top: 65px;
       }
       #leadership-subtitle {
         font-size: 35px;
+        font-family: 'Syne', sans-serif;
+        font-weight: 500;
         text-align: center;
         color: white;
         padding: 15px;
@@ -314,7 +422,13 @@ a {
   /*Awards*/
   .award-section{
     background-color: #1f2833;
-    height: 1000px;
+    height: 25vh;
+    align-items: center;
+    margin-top: 500px;
+  }
+  .award-section2{
+    background-color: #1f2833;
+    height: 75vh;
     align-items: center;
     margin-top: 500px;
   }
@@ -323,12 +437,16 @@ a {
     }
     #award-title {
       font-size: 64px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 500;
       text-align: center;
       color: #66fcf1; 
       padding-top: 65px;
     }
     #award-subtitle {
       font-size: 35px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 500;
       text-align: center;
       color: white;
       padding: 15px;
@@ -353,6 +471,32 @@ a {
       clear: both;
     }
 
+#back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #061826;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+}
+#back-to-top i {
+  color: #66fcf1;
+  font-size: 1.5rem;
+  transition: 0.2s ease-out;
+}
+#back-to-top:hover {
+  background-color: #66fcf1;
+  i {
+    color: white;
+    transform: translateY(-0.5vh);
+  }
+}
+
 /*  */
 
 /* 
@@ -375,4 +519,5 @@ a {
 /*  Colors:
 Background: #061826;
 Blue: #66fcf1; 
+Light Background: #1f2833
 */
